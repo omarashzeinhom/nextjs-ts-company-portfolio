@@ -1,10 +1,12 @@
 import React from 'react'
+import { Header,  Nav } from './components'
 
 const about = () => {
   return (
-    <div>
-      
-    </div>
+   <>
+<Header/>
+<Nav/>
+   </>
   )
 }
 
