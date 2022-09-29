@@ -42,6 +42,7 @@ const Downloads = () => {
           <a 
               href={download?.filelink}
               target="_blank"	
+              rel="noreferrer"
             >          {download?.os}
               </a>
               <br/>
