@@ -1,3 +1,41 @@
+### 
+
+1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### References 
+
+1. [yarn create next-app --typescript](https://nextjs.org/docs/basic-features/typescript)
+2. [yarn add bulma](https://yarnpkg.com/package/bulma)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
