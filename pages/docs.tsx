@@ -1,14 +1,14 @@
 import React from 'react'
 import { Header, Nav } from './components'
 
-const downloads = () => {
+const Docs = () => {
   return (
-    <>
+    <div>
       <Header />
       <Nav />
-      <h1>Downloads</h1>
-    </>
+      <h1>Docs</h1>
+    </div>
   )
 }
 
-export default downloads
+export default Docs
