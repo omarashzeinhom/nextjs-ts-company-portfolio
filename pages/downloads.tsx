@@ -1,12 +1,13 @@
 import React from 'react'
-import { Header,  Nav } from './components'
+import { Header, Nav } from './components'
 
 const downloads = () => {
   return (
-    <> 
-    <Header/>
-    <Nav/>
-    
+    <>
+      <Header />
+      <Nav />
+      <h1>Downloads</h1>
+
     </>
   )
 }

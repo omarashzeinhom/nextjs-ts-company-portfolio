@@ -5,13 +5,17 @@ import { Header, HomeCards, Nav } from './components'
 
 const Home: NextPage = () => {
   return (
+    <>
+        <Nav/>
+
     <div className={styles.container}>
-      <Nav/>
    <Header/>
 <HomeCards/>
      
       
     </div>
+    </>
+
   )
 }
 

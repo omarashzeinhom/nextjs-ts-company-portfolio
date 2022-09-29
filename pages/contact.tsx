@@ -6,7 +6,8 @@ const contact = () => {
   <> 
   <Header/>
   <Nav/>
-  
+  <h1>Contact</h1>
+
   </>
   )
 }

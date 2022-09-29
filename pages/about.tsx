@@ -1,13 +1,14 @@
 import React from 'react'
 import { Header,  Nav } from './components'
 
-const about = () => {
+const About = () => {
   return (
    <>
 <Header/>
 <Nav/>
+<h1>About</h1>
    </>
   )
 }
 
-export default about
+export default About
