@@ -1,32 +1,31 @@
-import { info } from 'console';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import 'bulma/css/bulma.css';
 
 const Nav = () => {
 
+    const [navstate , setNavState] = useState({
+        openMenu: false,
+
+    })
+  
+
+    const ToggleNav = () => {
+        setNavState({
+            openMenu: !navstate.openMenu,
+        })
+    }
+
     const NavbarBurger = (props: any) => (
         <button
-            onClick={props.toggleMenu}
-            className={`button navbar-burger ${props.active ? 'is-active' : ''}`}
+            onClick={props?.ToggleNav}
+            className={`button navbar-burger ${props?.active ? 'is-active' : ''}`}
         >
             <span />
             <span />
             <span />
         </button>
     );
-
-    let state = {
-        openMenu: false,
-
-    };
-
-    const ToggleNav = (props: any) => {
-        useState({
-            openMenu: !props.activeMenu,
-        })
-    }
-
 
 
     return (
@@ -41,7 +40,7 @@ const Nav = () => {
 
 
                 <NavbarBurger
-                    active={state?.openMenu}
+                    active={navstate?.openMenu}
                     ToggleNav={ToggleNav}
 
                 />
@@ -108,3 +107,5 @@ const NavBarPage = [
         link: "/downloads",
     },
 ]
+
+
