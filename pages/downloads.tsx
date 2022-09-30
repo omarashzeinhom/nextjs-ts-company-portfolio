@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header, Nav } from './components'
-import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 const Downloads = () => {
@@ -10,7 +9,7 @@ const Downloads = () => {
     {
       os: "Windows",
       filelink: "https://github.com/omarashzeinhom/BlockAG--Block-Adult-Gambling-Websites-Windows-Mac-Linux/releases/download/BlockAGWindows/AG.Shield.Windows.zip",
-      version: "1.0.1"
+      version: "1.0.2"
     },
 
     {
