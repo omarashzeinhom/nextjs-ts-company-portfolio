@@ -4,11 +4,11 @@ import 'bulma/css/bulma.css';
 
 const Nav = () => {
 
-    const [navstate , setNavState] = useState({
+    const [navstate, setNavState] = useState({
         openMenu: false,
 
     })
-  
+
 
     const ToggleNav = () => {
         setNavState({
@@ -48,7 +48,7 @@ const Nav = () => {
 
 
 
-            <div className="navbar-menu" id="navMenu">
+            <div className={`navbar-menu ${navstate.openMenu ? 'is-active' : ''}`}>
                 <div className="navbar-start">
                     {NavBarPage.map((page: any, index) =>
                         <div className="navbar-item is-hoverable" key={page + index}>
@@ -57,20 +57,14 @@ const Nav = () => {
                             </Link>
                         </div>
                     )}
-                </div>
 
-                <div className="navbar-dropdown">
-                    {NavBarPage.map((page: any, index) =>
-                        <div className="navbar-item has-dropdown is-hoverable" key={page + index}>
-                            <Link className="navbar-link" href={page?.link}>
-                                {page?.title}
-                            </Link>
-                        </div>
-                    )}
+
                 </div>
             </div>
 
+
             <hr className="navbar-divider" />
+
 
             <div className="navbar-end">
                 <div className="navbar-item">
